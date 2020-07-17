@@ -1,0 +1,22 @@
+#AS
+0
+addi $s0 $a1,0
+addi $a1 $zero,0  
+disp 4
+ei
+addi $a1 $s0,0
+jr $ra
+32
+addi $s0 $a1,0
+slti $a1 $zero,1
+disp 4
+ei
+addi $a1 $s0,0
+jr $ra
+64
+addi $s0 $a2,0
+ori $a2 $zero,1
+disp 4
+ei
+addi $a2 $s0,0
+jr $ra

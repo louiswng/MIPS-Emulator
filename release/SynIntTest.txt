@@ -1,0 +1,6 @@
+#AS
+disp ,1
+ei
+disp ,2
+inti ,0
+disp ,5

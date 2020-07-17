@@ -1,0 +1,21 @@
+#AS
+read $a0
+addi $t0,$zero,0
+addi $t1,$zero,0
+addi $a1,$zero,0
+addi $a2,$zero,0
+addi $a3,$zero,1
+sw $a3,1000($t1)
+add $a1,$a2,$zero
+add $a2,$a3,$zero
+add $a3,$a1,$a2
+addi $t0,$t0,1
+addi $t1,$t1,4
+bne $t0,$a0,-32
+addi $t0,$zero,0
+addi $t1,$zero,0
+lw $a1,1000($t1)
+write $a1
+addi $t0,$t0,1
+addi $t1,$t1,4
+bne $t0,$a0,-24
